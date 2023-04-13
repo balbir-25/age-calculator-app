@@ -1,0 +1,190 @@
+@font-face {
+    font-family: regular;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: italic;
+    src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    min-width: 1340px;
+    background-color: hsl(0, 0%, 86%);
+  }
+ 
+  /* =====================START MAIN AREA================================== */
+  .site{
+    padding: 5rem 20rem;
+  } 
+
+  .app{
+    border-radius: 10px 10px 90px 10px;
+    padding: 2rem;
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  .info{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .birth{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .birth-span{
+    font-family: "regular";
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+  }
+
+  .birth-input{
+    margin-top: 0.5rem;
+    border-radius: 0.2rem;
+    padding: 0.2rem 1.2rem;
+    width: 70%;
+    font-size: 32px;
+    color:  hsl(0, 0%, 8%);
+    font-family: "italic";
+    font-weight: 800;
+    border: 0.2rem solid hsl(0, 0%, 94%);
+    outline: hsl(0, 0%, 94%);
+    cursor: pointer;
+  }
+
+  .birth-input:focus{
+    border-color: hsl(259, 100%, 65%);
+  }
+
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+  }
+
+ .error{
+    margin-top: 0.5rem;
+    color: hsl(0, 100%, 67%);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "regular";
+    display: none;
+ }
+
+ hr{
+    margin-top: 3.5rem;
+    border-bottom: 0.5px solid hsl(0, 1%, 44%);
+ }
+
+  .icon-btn{
+    border-radius: 100%;
+    float: right;
+    background-color: hsl(259, 100%, 65%);
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .icon-btn:hover{
+    background-color: hsl(0, 0%, 8%);
+  }
+
+  .cal{
+    margin-top: 2rem;
+  }
+
+  .detail{
+    margin-top: 1rem;
+  }
+
+  .detail-span{
+    color: hsl(259, 100%, 65%);
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "italic";
+  }
+
+  .time{
+     color: hsl(0, 0%, 8%);
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "italic";
+  }
+
+  /* =====================END MAIN AREA================================== */
+  /* =============================START FOOTER  AREA=========================== */
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(240, 10%, 16%);
+    margin-top: 107px;
+  }
+  
+  .foot a {
+    text-decoration: none;
+    color: hsl(39, 100%, 56%);
+  }
+  
+  .foot a:hover {
+    color: hsl(300, 69%, 71%);
+  }
+  /* =============================END FOOTER  AREA=========================== *
+  /* ==============================START MEDIA QUERY========================== */
+  @media screen and (max-width: 375px){
+ 
+    body{
+        min-width: 375px;
+    }
+ 
+    .site{
+        padding: 1rem;
+    }
+ 
+    .icon-btn{
+        position: absolute;
+        float: none;
+        margin-left: 30%;
+    }
+ 
+    .info{
+        gap: 0.5rem;
+        padding-bottom: 2rem;
+    }
+ 
+    .cal{
+        padding-top: 2rem;
+    }
+ 
+    .birth-span{
+        font-size: 0.5rem;
+    }
+ 
+    .birth-input{
+        width: 90px;
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+    
+}
+
+  /* ==============================END MEDIA QUERY========================== */
