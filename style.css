@@ -40,6 +40,7 @@
     font-weight: 800;
     font-family: "italic";
     text-align: center;
+    text-transform: uppercase;
   }
 
   .info{
@@ -116,22 +117,27 @@
 
   .cal{
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
   }
 
   .detail{
     margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
   }
 
   .detail-span{
     color: hsl(259, 100%, 65%);
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: 800;
     font-family: "italic";
   }
 
   .time{
      color: hsl(0, 0%, 8%);
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: 800;
     font-family: "italic";
   }
@@ -169,6 +175,10 @@
         padding: 1rem;
     }
  
+    .app-h1{
+      font-size: 1.5rem;
+    }
+
     .icon-btn{
         position: absolute;
         float: none;
@@ -192,6 +202,10 @@
         width: 90px;
         font-size: 16px;
         padding: 0.5rem;
+    }
+
+    .detail-span, .time{
+      font-size: 3rem;
     }
     
 }
