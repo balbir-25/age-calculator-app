@@ -34,10 +34,19 @@
     background-color: hsl(0, 0%, 100%);
   }
 
+  .app-h1{
+    color: hsl(259, 100%, 65%);
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "italic";
+    text-align: center;
+  }
+
   .info{
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    margin-top: 2rem;
   }
 
   .birth{
